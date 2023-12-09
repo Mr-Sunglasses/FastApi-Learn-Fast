@@ -33,6 +33,7 @@ app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
 
+#testing pep8speaks :)
 app.include_router(blog.router)
 app.include_router(user.router)
 app.include_router(auth.router)
