@@ -24,7 +24,7 @@ jobs:
               run: python test.py
             - uses: peter-evans/create-pull-request@v3
               with:
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.PAT }}
                 title: "DEPS"
                 commit-message: Update Dependencies
                 base: ${{ github.head_ref }}
