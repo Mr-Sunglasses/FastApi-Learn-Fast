@@ -22,6 +22,9 @@ jobs:
                   pip install requests
             - name: Run script
               run: python test.py
-            - uses: stefanzweifel/git-auto-commit-action@v4
+            - uses: peter-evans/create-pull-request@v3
               with:
+                token: ${{ secrets.GITHUB_TOKEN }}
+                title: "DEPS"
                 commit_message: Update Dependencies
+                base: ${{ github.head_ref }}
