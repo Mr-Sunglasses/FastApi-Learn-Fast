@@ -26,5 +26,5 @@ jobs:
               with:
                 token: ${{ secrets.GITHUB_TOKEN }}
                 title: "DEPS"
-                commit_message: Update Dependencies
+                commit-message: Update Dependencies
                 base: ${{ github.head_ref }}
